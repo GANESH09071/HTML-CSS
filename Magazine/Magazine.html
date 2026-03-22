@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Magazine Layout</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+
+.magazine {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+}
+
+.main-story {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background: #e3f2fd;
+    padding: 20px;
+}
+
+
+.sidebar {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    background: #fff3e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.article {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: auto;
+    font-size: 14px;
+    color: gray;
+    clear:both;
+}
+</style>
+</head>
+
+<body>
+
+<div class="magazine">
+
+    
+    <div class="main-story">
+        <div class="header">Artificial Intelligence</div>
+
+        <div class="article">
+            A recent survey by Forbes indicated that many Americans still trust humans over AI by a large percentage. Those surveyed shared that they think people would do a better job of administering medicine, writing laws, and even choosing gifts, just to name a few.
+            The faculty in the College of Engineering have their own opinions based on their expertise and related research. We wanted to hear from some of the most well-versed in the AI space to learn more about how this technology impacts us. These faculty experts range from computer scientists to electrical engineers to aerospace engineers and even building construction experts. Here’s what they had to say about AI–the good, the bad, and the (potentially) scary.
+        </div>
+
+        <div class="article">
+            A recent survey by Forbes indicated that many Americans still trust humans over AI by a large percentage. Those surveyed shared that they think people would do a better job of administering medicine, writing laws, and even choosing gifts, just to name a few.
+            The faculty in the College of Engineering have their own opinions based on their expertise and related research. We wanted to hear from some of the most well-versed in the AI space to learn more about how this technology impacts us. These faculty experts range from computer scientists to electrical engineers to aerospace engineers and even building construction experts. Here’s what they had to say about AI–the good, the bad, and the (potentially) scary.
+        </div>
+
+        <div class="footer">Page 1</div>
+    </div>
+
+    
+    <div class="sidebar">
+        <div class="header">Contents</div>
+
+        <div class="article">
+            • Trending News<br>
+            • Quick Reads<br>
+            • Editor Picks
+        </div>
+
+        <div class="article">
+            Advertisement Space
+        </div>
+
+        <div class="footer">Page 2</div>
+    </div>
+
+</div>
+
+</body>
+</html>
