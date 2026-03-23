@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:#d9d9d9;
+    margin:0;
+}
+
+.container{
+    width:420px;
+    background:#d65c5c;
+    padding:25px;
+    border-radius:6px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    margin:40px auto;   
+}
+
+h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+.gender{
+    display:flex;
+    gap:20px;
+    margin-top:5px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+button{
+    width:48%;
+    padding:10px;
+    border:none;
+    background:#eee;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<label>First Name</label>
+<input type="text">
+
+<label>Last Name</label>
+<input type="text">
+
+<label>Date of Birth</label>
+<input type="date">
+
+<label>Gender</label>
+<div class="gender">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+</div>
+
+<label>Email</label>
+<input type="email">
+
+<label>Phone Number</label>
+<input type="tel">
+
+<label>Address</label>
+<textarea rows="3"></textarea>
+
+<label>City</label>
+<input type="text">
+
+<label>State</label>
+<input type="text">
+
+<label>Course</label>
+<select>
+<option>BCA</option>
+<option>BSc</option>
+<option>BCom</option>
+<option>BTech</option>
+</select>
+
+<label>Year of Passed</label>
+<select>
+<option>2024</option>
+<option>2023</option>
+<option>2022</option>
+<option>2021</option>
+</select>
+
+<label>Password</label>
+<input type="password">
+
+<label>Confirm Password</label>
+<input type="password">
+
+<div class="buttons">
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
