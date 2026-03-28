@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8dccb;
+}
+
+/* MAIN SHEET */
+.marksheet {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff8f0;
+    border: 6px double #8b5a2b;
+    position: relative;
+
+    /* Pattern background */
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(139, 90, 43, 0.05) 0px,
+        rgba(139, 90, 43, 0.05) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+/* WATERMARK (logo style) */
+.marksheet::before {
+    content: "";
+    background: url("Vit\ Logo.jpg") no-repeat center;
+    background-size: 250px;
+    opacity: 0.06;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #8b5a2b;
+    padding-bottom: 10px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.qr {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.logo {
+    width: 135px;
+    margin: 10px 0;
+}
+
+.header h2 {
+    color: #8b0000;
+    margin: 5px 0;
+}
+
+.header h3 {
+    margin: 5px 0;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td, th {
+    border: 1px solid #8b5a2b;
+    padding: 6px;
+    font-size: 14px;
+}
+
+th {
+    background: #f3d9b1;
+}
+
+/* DETAILS */
+.details td {
+    text-align: left;
+}
+
+/* RESULT */
+.result td {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
