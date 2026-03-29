@@ -1,0 +1,21 @@
+body{
+font-family: Arial;
+text-align: center;
+}
+
+.map{
+width: 300px;
+margin-top: 20px;
+}
+
+
+/* 
+.state{
+display:none;
+border:2px solid black;
+padding:15px;
+width:350px;
+margin:auto;
+background:#f2f2f2;
+} */
+
